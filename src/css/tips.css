@@ -1,0 +1,158 @@
+.tipsPanel {
+  display: flex;
+  -webkit-flex: flex;
+  -moz-flex: flex;
+  /*background-color: #f8f8f8;*/
+  /*background-color: blue;*/
+  /*justify-content: center;*/
+  align-items: center;
+  border-bottom-color: #dadada;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  font-size: small;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tipsPanelHeader {
+  width: 250px;
+  background-color: yellow;
+}
+
+.tipsGamePanel {
+  display: flex;
+  -moz-flex: 25%;
+  /*background-color: yellow;*/
+  flex: 25%;
+  min-width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.tipsEditPanel {
+  display: flex;
+  /*flex-direction: column;*/
+  flex: 75%;
+  /*flex-shrink: 1;*/
+  /*width: 100px;*/
+  /*height: 30px;*/
+  /*padding: 5px;*/
+  /*margin-left: 20px;*/
+  border-left-color: #dadada;
+  border-left-style: solid;
+  border-left-width: thin;
+  border-bottom-width: thin;
+  justify-content: space-around;
+  align-items: center;
+  /*background-color: green;*/
+
+}
+
+
+/*.tipsTeamItem {
+  flex: 20%;
+}*/
+
+.tipsTeamItem {
+  display: flex;
+  width: 60px;
+  /*height: 30px;*/
+  /*padding: 5px;*/
+  /*margin-left: 20px;*/
+  border-bottom-width: thin;
+  justify-content: center;
+  align-items: center;
+  /*background-color: green;*/
+
+}
+
+.userClass {
+  background-color: #095692;
+  color: white;
+  border-color: yellow;
+  border-width: medium;
+  border-style: solid;
+}
+
+.adminClass {
+  background-color: #095692;
+  color: white;
+  border-color: red;
+  border-width: medium;
+  border-style: solid;
+}
+
+.correctTip {
+  background-color: #6db85e;
+}
+
+.incorrectTip {
+  background-color: #fc5959;
+}
+
+.drawTip {
+  background-color: #f4ee42;
+}
+
+.tipsEditIcon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  /*background-color: red;*/
+}
+
+.tipsGameIcon {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+.tipsDetails {
+  /*background-color: #0f1164;*/
+  /*color: white;*/
+  flex: 60%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  font-size: small;
+  /*height: 15px;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 100px;
+  /*font-weight: bold;*/
+
+}
+
+@media (max-width: 550px) {
+  .tipsGameIcon {
+    width: 30px;
+    height: 25px;
+  }
+  .tipsEditIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .tipsTeamItem {
+    width: 50px;
+  }
+  .tipsPanel {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .tipsGamePanel {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tipsDetails {
+    display: none;
+  }
+  .tipsGamePanel {
+    min-width: 90px;
+    margin: 5px;
+  }
+}
