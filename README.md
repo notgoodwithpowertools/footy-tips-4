@@ -10,12 +10,22 @@ npm install --save firebase@4.12.1
 
 npm install --save-dev redux-devtools-extension firebase-admin node-env-file
 ```
-For Firebase hosting, first initialize Firebase
+For Firebase hosting, 
+- First install Firebase [local admin SDK](https://firebase.google.com/docs/cli?authuser=0)
 ```
+curl -sL https://firebase.tools | bash
+ 
 firebase init
 ```
 Select hosting
 Directory is 'build'
+```
+What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+✔  Wrote build/404.html
+? File build/index.html already exists. Overwrite? No
+i  Skipping write of build/index.html
+```
 To deploy
 ```
 npm run build
