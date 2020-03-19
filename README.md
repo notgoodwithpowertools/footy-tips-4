@@ -35,6 +35,10 @@ To test
 ```
 npm run start
 ```
+To update the season draw:
+1) load DB with current draw. Use the CSV to JSON tool [here](https://www.convertcsv.com/csv-to-json.htm)
+2) Update Firebase access rules
+3) Using current SA key use ```$ node ./config/loadData3.js```
 
 ##############
 
